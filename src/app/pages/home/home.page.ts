@@ -16,12 +16,16 @@ export class HomePage implements OnInit {
   restaurantForm = new FormGroup({
     isOpen: new FormControl(false),
     comment: new FormControl(''),
-    congestion: new FormControl(''),
+    congestion: new FormControl('1'),
   });
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  SendStatus() {
+    console.log(this.restaurantForm.value);
   }
 
 }
