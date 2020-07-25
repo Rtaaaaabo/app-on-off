@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -19,13 +20,24 @@ export class HomePage implements OnInit {
     congestion: new FormControl('1'),
   });
 
-  constructor() { }
+  constructor(
+    private toastCtrl: ToastController,
+  ) { }
 
   ngOnInit() {
   }
 
   SendStatus() {
     console.log(this.restaurantForm.value);
+    this.presentToast();
+  }
+
+  async presentToast() {
+    const toast = await this.toastCtrl.create({
+      message: '更新しました！ありがとうございます！',
+      duration: 3000
+    });
+    toast.present();
   }
 
 }
