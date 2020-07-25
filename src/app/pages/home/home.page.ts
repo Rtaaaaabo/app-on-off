@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
+  kindCongestion = [
+    { name: '1', value: '1' },
+    { name: '2', value: '2' },
+    { name: '3', value: '3' },
+  ];
+
+  restaurantForm = new FormGroup({
+    isOpen: new FormControl(false),
+    comment: new FormControl(''),
+    congestion: new FormControl(''),
+  });
 
   constructor() { }
 

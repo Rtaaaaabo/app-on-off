@@ -1,3 +1,24 @@
 <app-header></app-header>
 
-<ion-content> </ion-content>
+<ion-content>
+  <form [formGroup]="restaurantForm">
+    <ion-item>
+      <ion-label>営業</ion-label>
+      <ion-toggle formControlName="isOpen"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>混雑度</ion-label>
+      <ion-select formControlName="congestion">
+        <ion-select-option
+          [value]="value.value"
+          *ngFor="let value of kindCongestion"
+          >{{value.name}}</ion-select-option
+        >
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">一言メッセージ</ion-label>
+      <ion-textarea rows="6" cols="20" formControlName="comment"></ion-textarea>
+    </ion-item>
+  </form>
+</ion-content>

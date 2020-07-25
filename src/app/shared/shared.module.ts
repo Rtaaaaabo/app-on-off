@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 
@@ -9,10 +10,10 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 @NgModule({
   declarations: [HeaderComponent],
   imports: [
-    CommonModule, IonicModule,
+    CommonModule, IonicModule, ReactiveFormsModule, FormsModule
   ],
   providers: [StatusBar, SplashScreen],
 
-  exports: [HeaderComponent]
+  exports: [HeaderComponent, ReactiveFormsModule, FormsModule]
 })
 export class SharedModule { }
