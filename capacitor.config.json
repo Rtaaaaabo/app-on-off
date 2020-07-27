@@ -1,5 +1,5 @@
 {
-  "appId": "io.ionic.starter",
+  "appId": "com.oidema_jp.onoff",
   "appName": "appOidemaOnOff",
   "bundledWebRuntime": false,
   "npmClient": "npm",

@@ -2,6 +2,6 @@
 <resources>
     <string name="app_name">appOidemaOnOff</string>
     <string name="title_activity_main">appOidemaOnOff</string>
-    <string name="package_name">io.ionic.starter</string>
-    <string name="custom_url_scheme">io.ionic.starter</string>
+    <string name="package_name">com.oidema_jp.onoff</string>
+    <string name="custom_url_scheme">com.oidema_jp.onoff</string>
 </resources>

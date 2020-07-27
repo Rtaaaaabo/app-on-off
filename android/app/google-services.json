@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "834662390276",
+    "firebase_url": "https://udon-realtime-app.firebaseio.com",
+    "project_id": "udon-realtime-app",
+    "storage_bucket": "udon-realtime-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834662390276:android:8d9309afffbc8e79b07351",
+        "android_client_info": {
+          "package_name": "com.oidema_jp.onoff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834662390276-m6vb7ok0h45qnrvqhrf7cfa1jd0s7dtq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS4oqciC2QzZ1dcshIcP0SDJCtSYQUgKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834662390276-m6vb7ok0h45qnrvqhrf7cfa1jd0s7dtq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
